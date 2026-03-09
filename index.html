@@ -3,79 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElektroInfo - Strona Zamknięta</title>
+    <title>ElektroInfo - Przekierowanie</title>
     <style>
+        /* Reset i tło */
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            text-align: center;
         }
 
-        /* Styl czerwonego paska */
-        .alert-banner {
-            background-color: #d32f2f; /* Intensywny czerwony */
+        /* Czerwony pasek na górze */
+        .top-banner {
+            background-color: #ff0000; /* Czysty czerwony */
             color: white;
             width: 100%;
-            padding: 20px 0;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
             position: fixed;
             top: 0;
             left: 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
-        .alert-content {
-            font-size: 1.2rem;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        /* Styl przycisku */
-        .btn-redirect {
-            background-color: white;
-            color: #d32f2f;
-            padding: 10px 25px;
-            text-decoration: none;
-            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             text-transform: uppercase;
-            font-weight: 800;
-            transition: transform 0.2s, background-color 0.2s;
-            border: 2px solid white;
         }
 
-        .btn-redirect:hover {
-            background-color: #f8d7da;
+        /* Kontener na środku */
+        .container {
+            text-align: center;
+        }
+
+        /* Styl przycisku na środku */
+        .main-button {
+            display: inline-block;
+            background-color: #ff0000;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .main-button:hover {
+            background-color: #cc0000;
             transform: scale(1.05);
         }
 
-        .main-info {
-            margin-top: 80px;
-            color: #555;
+        .main-button:active {
+            transform: scale(0.98);
         }
     </style>
 </head>
 <body>
 
-    <div class="alert-banner">
-        <div class="alert-content">
-            <span>UWAGA: Ta strona została zamknięta!</span>
-            <a href="TU_WLEJ_ADRES_KTORY_MI_PODASZ" class="btn-redirect">Naciśnij ten przycisk</a>
-        </div>
+    <div class="top-banner">
+        Uwaga Ta Strona Została Zamknięta naciśnij ten przycisk
     </div>
 
-    <div class="main-info">
-        <h1>ElektroInfo</h1>
-        <p>Przenosimy się w nowe miejsce, aby zapewnić lepszą jakość treści.</p>
+    <div class="container">
+        <a href="https://franekzz.github.io/Gorace-Mamuski/" class="main-button">
+            Otwórz Naszą nową stronę
+        </a>
     </div>
 
 </body>
